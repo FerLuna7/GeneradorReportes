@@ -187,6 +187,11 @@ namespace Generador
                 MessageBox.Show($"No se pudo acceder a la carpeta: {ex.Message}", "Error de acceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
