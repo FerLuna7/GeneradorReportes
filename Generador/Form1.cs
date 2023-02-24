@@ -166,32 +166,6 @@ namespace Generador
 
             return dt;
         }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            string nombreArchivo = textBox3.Text;
-            string directorio = @"C:\";
-            try
-            {
-
-                string[] archivos = Directory.GetFiles(directorio, nombreArchivo, SearchOption.AllDirectories);
-
-                listBox3.Items.Clear();
-                foreach (string archivo in archivos)
-                {
-                    listBox3.Items.Add(archivo);
-                }
-            }
-            catch (UnauthorizedAccessException ex)
-            {
-                MessageBox.Show($"No se pudo acceder a la carpeta: {ex.Message}", "Error de acceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

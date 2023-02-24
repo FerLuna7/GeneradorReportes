@@ -1,4 +1,6 @@
-﻿namespace Generador
+﻿using System;
+
+namespace Generador
 {
     partial class Form1
     {
@@ -239,6 +241,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
